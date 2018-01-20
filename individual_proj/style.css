@@ -1,0 +1,50 @@
+#btn {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 200px;
+    width: 200px;
+}
+
+*.disp {
+    text-align: center;
+}
+
+#login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#left_side {
+    float: left;
+}
+
+#right_side {
+    float: right;
+}
+
+#middle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+}
+
+#leaderboard {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+}
