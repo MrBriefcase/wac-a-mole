@@ -4,14 +4,14 @@ var disp = document.getElementById('ct');
 var count = 0;
 
 // initial randomize
-btn.style.left = Math.round(Math.random() * window.innerWidth) + 'px';
-btn.style.top = Math.round(Math.random() * window.innerHeight) + 'px';
+btn.style.left = Math.round(Math.random() * (window.innerWidth - 100)) + 'px';
+btn.style.top = Math.round(Math.random() * (window.innerHeight - 100)) + 'px';
 
 // randomize position every 0.7 sec
 var scatterInterval = setInterval(function(){
     btn.src = './boy.gif';
-    btn.style.left = Math.round(Math.random() * window.innerWidth) + 'px';
-    btn.style.top = Math.round(Math.random() * window.innerHeight) + 'px';
+    btn.style.left = Math.round(Math.random() * (window.innerWidth - 100)) + 'px';
+    btn.style.top = Math.round(Math.random() * (window.innerHeight - 100)) + 'px';
 }, 1200);
 
 // btn event listener

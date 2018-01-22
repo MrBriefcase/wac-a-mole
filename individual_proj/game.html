@@ -5,10 +5,14 @@
             WAC-A-MOLE!
         </title>
         <link rel='stylesheet' type='text/css' href='./style.css'/>
+        
+        <!--    Added so we can use Bootstrap   -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     
     <body onload='initialSetup()'>
-        <div id='left_side'>
+        <!-- BOOTSTRAP used here -->
+        <div id='left_side' class='badge-primary'>
             <h1 class='disp'>SCORE</h1>
             <h2 id='ct' class='disp'>0</h2>
         </div>
@@ -17,7 +21,8 @@
             <button id='end_game'>I AM DONE CLICKING</button>
         </div>
         
-        <div id='right_side'>
+        <!-- BOOTSTRAP used here too -->
+        <div id='right_side' class='badge-secondary'>
             <h1 class='disp'>HIGH-SCORE</h1>
             <h2 id='high_score' class='disp'>0</h2>
         </div>
