@@ -10,7 +10,7 @@ document.getElementById('play_btn').addEventListener('click', function(){
             document.getElementById('debug').innerHTML = 'Get Ready!';
             // redirect to game page.
             setTimeout(function(){
-                window.location = './game.html';
+                window.location = '../HTML/game.html';
             }, 4000);
             // debug message.
             console.log(this.responseText);
@@ -21,7 +21,7 @@ document.getElementById('play_btn').addEventListener('click', function(){
     var nameInput = new FormData();
     nameInput.append('username', player_nm);
     
-    xhttp.open('POST', './POST_the_user.php', true);
+    xhttp.open('POST', '../PHP/POST_the_user.php', true);
     xhttp.send(nameInput);
     
 });

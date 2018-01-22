@@ -9,19 +9,19 @@ btn.style.top = Math.round(Math.random() * (window.innerHeight - 100)) + 'px';
 
 // randomize position every 0.7 sec
 var scatterInterval = setInterval(function(){
-    btn.src = './boy.gif';
+    btn.src = '../assets/boy.gif';
     btn.style.left = Math.round(Math.random() * (window.innerWidth - 100)) + 'px';
     btn.style.top = Math.round(Math.random() * (window.innerHeight - 100)) + 'px';
 }, 1200);
 
 // btn event listener
 btn.addEventListener('click', function(){
-    btn.src = './girl.gif';
+    btn.src = '../assets/girl.gif';
     count++;
     disp.innerHTML = count;
     
     setTimeout(function(){
-        btn.src = './boy.gif';
+        btn.src = '../assets/boy.gif';
     }, 200);
 });
 
@@ -50,7 +50,7 @@ function initialSetup() {
     }
     
     // GET request to grab the high-score.
-    xhttp.open('GET', './GET_highscore.php', true);
+    xhttp.open('GET', '../PHP/GET_highscore.php', true);
     xhttp.send();
 }
 
@@ -68,7 +68,7 @@ document.getElementById('end_game').addEventListener('click', function(){
             console.log('updates score');
             
             setTimeout(function() {
-                window.location = './last_page.html';
+                window.location = '../HTML/last_page.html';
             }, 1000);
         }
     }
@@ -76,6 +76,6 @@ document.getElementById('end_game').addEventListener('click', function(){
     var data = new FormData();
     data.append('score', count);
     
-    xhttp.open('POST', './POST_end_game.php', true);
+    xhttp.open('POST', '../PHP/POST_end_game.php', true);
     xhttp.send(data);
 });

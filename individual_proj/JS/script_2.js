@@ -14,6 +14,6 @@ function createBoard() {
     }
     
     // GET request to grab the high-score.
-    xhttp.open('GET', './GET_leaderboard.php', true);
+    xhttp.open('GET', '../PHP/GET_leaderboard.php', true);
     xhttp.send();
 }
