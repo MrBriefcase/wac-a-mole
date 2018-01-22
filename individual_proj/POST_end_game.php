@@ -8,7 +8,7 @@
         $DBHost = 'localhost';
         $port = 3306;
         $dblogin = 'daren941_daren';
-        $DBpassword = 'tryinToGetMyPass?GetOuttaHere!';
+        $DBpassword = 'secret';
         $DBname = 'daren941_wac-users';
         
         $score = $_POST['score'];
